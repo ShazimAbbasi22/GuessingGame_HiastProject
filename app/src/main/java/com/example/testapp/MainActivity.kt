@@ -131,9 +131,17 @@ fun GenerateRandomNumber() {
                     Toast.makeText(context, "Too Low", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(context, "Correct", Toast.LENGTH_SHORT).show()
+                    randomNumber = ""
+                    userNumber = ""
+                    submissionCount = 0
                 }
             } else {
                 Toast.makeText(context, "You have reach the limit", Toast.LENGTH_LONG).show()
+                randomNumber = ""
+                userNumber = ""
+                submissionCount = 0
+
+
             }
         }) {
             Text(text = "Check Guess")
